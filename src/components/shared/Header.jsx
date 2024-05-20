@@ -35,7 +35,7 @@ const Header = () => {
   return (
     <div
       ref={navbarRef}
-      className={`navbar ${isSticky ? "sticky" : "sticky"} md:px-18 lg:px-36`}
+      className={`navbar ${isSticky ? "sticky" : ""} md:px-18 lg:px-36`}
       data-aos="fade-down"
     >
       <div className="navbar-start">
@@ -74,7 +74,6 @@ const Header = () => {
                 Home
               </Link>
             </li>
-
             <li onClick={toggleMobileMenu}>
               <Link
                 to="/projects"
@@ -124,13 +123,12 @@ const Header = () => {
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal ">
+        <ul className="menu menu-horizontal">
           <li>
             <Link to="/" style={location.pathname === "/" ? activeStyle : null}>
               Home
             </Link>
           </li>
-
           <li>
             <Link
               to="/projects"
@@ -158,14 +156,14 @@ const Header = () => {
             </Link>
           </li>
           <li>
-            <li>
-              <Link
-                to="/about"
-                style={location.pathname === "/about" ? activeStyle : null}
-              >
-                About
-              </Link>
-            </li>
+            <Link
+              to="/about"
+              style={location.pathname === "/about" ? activeStyle : null}
+            >
+              About
+            </Link>
+          </li>
+          <li>
             <Link
               to="/contact"
               style={location.pathname === "/contact" ? activeStyle : null}

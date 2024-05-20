@@ -1,13 +1,69 @@
-.navbar {
+/* .navbar {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: rgba(
-    0,
-    0,
-    0,
-    0.5
-  ); /* Fallback color for browsers that do not support backdrop-filter */
-  backdrop-filter: blur(10px); /* Adjust the blur radius as needed */
-  z-index: 1000; /* Adjust as needed */
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+} */
+
+/* Header.css */
+
+.navbar {
+  position: relative;
+  width: 100%;
+  background-color: #333;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  border-bottom: 1px solid rgb(85, 84, 84);
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #444;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  flex-direction: column;
+}
+
+.dropdown-content.block {
+  display: flex;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.menu-horizontal li {
+  margin-right: 1rem;
+}
+
+.menu-horizontal li:last-child {
+  margin-right: 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.menu a:hover {
+  color: #ddd;
 }
