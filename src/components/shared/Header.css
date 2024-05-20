@@ -1,0 +1,13 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Fallback color for browsers that do not support backdrop-filter */
+  backdrop-filter: blur(10px); /* Adjust the blur radius as needed */
+  z-index: 1000; /* Adjust as needed */
+}
