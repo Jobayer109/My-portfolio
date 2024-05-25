@@ -1,5 +1,6 @@
 import { HiExternalLink } from "react-icons/hi";
 import { Link } from "react-router-dom";
+import "./Project.css";
 
 const Project = ({ project }) => {
   const { _id, img, title, type, link } = project;
