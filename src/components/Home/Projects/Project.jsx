@@ -12,7 +12,7 @@ const Project = ({ project }) => {
       <div className="card-body ">
         <a target="_blank" href={link} rel="noreferrer">
           <div className="flex items-center justify-start">
-            <h2 className="card-title">{title}</h2>
+            <h2 className="card-title text-amber-400">{title}</h2>
             <HiExternalLink className="text-2xl text-white" />
           </div>
         </a>
