@@ -1,6 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
 import React from "react";
 import { BounceLoader } from "react-spinners";
+import Project from "./Project";
 
 const Projects = () => {
   const { data: projects, isLoading } = useQuery({
@@ -35,9 +36,9 @@ const Projects = () => {
         <h3 className="text-3xl font-semibold  text-gray-300">Projects</h3>
         <div className="h-[3px] bg-amber-500 mb-8 w-[113px] blur-sm"></div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-3 gap-6 md:gap-8 lg:gap-10 xl:gap-12 2xl:gap-12">
-          {/* {projects?.map((project) => (
+          {projects?.map((project) => (
             <Project key={project._id} project={project}></Project>
-          ))} */}
+          ))}
         </div>
       </div>
     </div>
