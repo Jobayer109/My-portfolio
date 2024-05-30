@@ -8,8 +8,8 @@ const Banner = () => {
     >
       <div className="container ">
         <div className=" py-16 rounded-md w-full  ">
-          <span className="block text-2xl font-bold mb-2 dark:text-yellow-600 font-mono text-center sm:text-end md:text-end lg:text-end">
-            Hi, This is
+          <span className="block text-xl tracking-wider font-bold mb-2 dark:text-yellow-600  text-center sm:text-end md:text-end lg:text-end">
+            Hi, this is
           </span>
           <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold text-gray-400 text-center md:text-end lg:text-end sm:text-end">
             Jobayer Ahmed
