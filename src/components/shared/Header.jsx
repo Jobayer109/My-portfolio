@@ -14,7 +14,7 @@ const Header = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
-  const activeStyle = { color: "white" };
+  const activeStyle = { color: "#e6aa3b" };
 
   useEffect(() => {
     const handleScroll = () => {
