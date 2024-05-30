@@ -4,13 +4,11 @@
 
 body {
   margin: 0;
-  font-family: "Fira Sans", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
-    "Helvetica Neue", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
   overflow-x: hidden;
 }
 
 code {
-  font-family: "Courier New", monospace;
+  font-family: "Rubik", sans-serif;
 }
