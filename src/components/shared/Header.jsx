@@ -35,16 +35,12 @@ const Header = () => {
   return (
     <section
       ref={navbarRef}
-      className={`navbar ${isSticky ? "sticky" : ""} px-8 lg:px-18`}
+      className={`navbar ${isSticky ? "sticky" : ""} px-16`}
       data-aos="fade-down"
     >
-      <div className="navbar-start">
+      <div className="navbar">
         <div className="dropdown">
-          <label
-            tabIndex={0}
-            className="btn btn-ghost lg:hidden"
-            onClick={toggleMobileMenu}
-          >
+          <label tabIndex={0} className=" lg:hidden" onClick={toggleMobileMenu}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -66,14 +62,6 @@ const Header = () => {
               isMobileMenuOpen ? "block" : "hidden"
             }`}
           >
-            <li onClick={toggleMobileMenu}>
-              <Link
-                to="/"
-                style={location.pathname === "/" ? activeStyle : null}
-              >
-                Home
-              </Link>
-            </li>
             <li onClick={toggleMobileMenu}>
               <Link
                 to="/projects"
@@ -124,11 +112,6 @@ const Header = () => {
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal">
-          <li>
-            <Link to="/" style={location.pathname === "/" ? activeStyle : null}>
-              Home
-            </Link>
-          </li>
           <li>
             <Link
               to="/projects"
