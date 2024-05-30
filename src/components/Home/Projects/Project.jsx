@@ -6,7 +6,7 @@ const Project = ({ project }) => {
   const { _id, img, title, type, link } = project;
   return (
     <div
-      className="card w-[100%] md:w-[100%] lg:w-[100%] xl:w-[100%]  shadow-xl border border-gray-600   hover:border-amber-500 hover:transition duration-500 ease-in-out "
+      className="card w-[100%] md:w-[100%] lg:w-[100%] xl:w-[100%]  hover:shadow-xl hover:shadow-gray-600 border border-gray-600   hover:border-amber-500 hover:transition duration-300 ease-in-out"
       data-aos="fade-up"
     >
       <div className="card-body ">
