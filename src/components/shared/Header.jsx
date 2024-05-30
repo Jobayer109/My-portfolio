@@ -33,9 +33,9 @@ const Header = () => {
   }, [navbarHeight]);
 
   return (
-    <div
+    <section
       ref={navbarRef}
-      className={`navbar ${isSticky ? "sticky" : ""} md:px-18 lg:px-36`}
+      className={`navbar ${isSticky ? "sticky" : ""} px-8 md:px-18 lg:px-36`}
       data-aos="fade-down"
     >
       <div className="navbar-start">
@@ -122,7 +122,7 @@ const Header = () => {
           <HiBars3BottomLeft className="text-3xl hidden lg:block sm:text-end" />
         </Link>
       </div>
-      <div className="navbar-center hidden lg:flex">
+      <div className="navbar-center hidden lg:flex ">
         <ul className="menu menu-horizontal">
           <li>
             <Link to="/" style={location.pathname === "/" ? activeStyle : null}>
@@ -173,7 +173,7 @@ const Header = () => {
           </li>
         </ul>
       </div>
-    </div>
+    </section>
   );
 };
 
