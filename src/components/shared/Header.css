@@ -22,7 +22,7 @@
   left: 0;
   width: 100%;
   z-index: 1000;
-  background-color: #444;
+  backdrop-filter: blur(10px);
 }
 
 .dropdown {
@@ -48,12 +48,12 @@
   display: flex;
 }
 
-.menu-horizontal li {
+/* .menu-horizontal li {
   margin-right: 1rem;
-}
+} */
 
 .menu-horizontal li:last-child {
-  margin-right: auto;
+  margin-left: auto;
 }
 
 .menu a {
